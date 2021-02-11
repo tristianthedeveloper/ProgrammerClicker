@@ -1,3 +1,5 @@
+import { removeFromArray } from "./utils";
+
 interface Component {
 
 
@@ -9,7 +11,7 @@ interface Component {
     /**
      *  Stops rendering the given component, and returns its name.
      */
-    unrender() : string;
+    unrender(): string;
 
     /**
      * name of this component, will be used in a component list.
@@ -56,11 +58,13 @@ class ComponentManager {
     /**
      * Unloads and un-renders the given component.
      * @param what The component to unload
+     * @returns The given component's name
      */
-    unloadComponent(what: Component) {
+    unloadComponent(what: Component) : string {
 
-        
+        removeFromArray(this.loadedComponents, what);
 
+        return what.unrender();
 
     }
 }

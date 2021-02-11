@@ -1,0 +1,64 @@
+
+/* I DON'T KNOW CSS! */
+
+* {
+
+    background: 3px lightgray ;
+    
+
+}
+
+.left {
+  
+    text-align: left;
+    
+
+}
+
+.right {
+
+    margin: 1px solid rgb(33, 61, 187);    
+    text-align: right;
+
+}
+
+.aboveButton {
+
+    position: absolute;
+    border: 2px thin lightgray;
+    color: white;
+    font-size: 24px;
+    top: 25px;
+    left: 158px;
+}
+
+
+
+/**
+Humans per second, xD
+*/
+.hpsCounter {
+
+    position: absolute;
+    border: 2px thin lightgray;
+    color: white;
+    font-size: 24px;
+    top: 50px;
+    left: 100px;
+    
+}
+
+.buttonMadeForClicking {
+
+    position: absolute;
+    border-radius: 25px;
+    top: 100px;
+    width: 474px;
+    height: 316px;
+
+}
+
+.buttonMadeForClicking:hover {
+
+    opacity: 85%;
+}
