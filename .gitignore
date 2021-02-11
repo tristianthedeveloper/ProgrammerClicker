@@ -1,0 +1,4 @@
+# ignore all files we don't need to include
+
+node_modules
+.vscode
